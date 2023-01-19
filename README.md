@@ -2,7 +2,7 @@
 # node-express-typescript-starter
 This is a starter Node.js API server project built on Express. It has Docker support as well as Jest, ESLint, and a local development server. Everything is in Typescript.
 
-This was initially built for a Google Cloud Run project, but it could be used anywhere. 
+This was initially built for a Google Cloud Run project, but it could be used anywhere.
 ## Prerequisite
 - Node 16
 ## Nice to have
@@ -37,6 +37,9 @@ npm run lint
 ```
 npm test
 ```
+## 2023-01-10 test command.
+npx ts-node ./src/index.ts
+
 ## ENV variables
 The project uses [dotenv](https://github.com/motdotla/dotenv) to parse environment variables. To add environment variables to your project, simply, create a `.env` file in the root folder of the project. You can then reference it using `process.env.VAR_NAME`. For example, to change Node.js mode, simply add `NODE_ENV=production` or `NODE_ENV=development` to your `.env` file to change Node.js mode to production or development accordingly.
 
@@ -92,7 +95,7 @@ node-express-typescript-starter
 ```
 ## General notes
 - This is meant to be a starter project. Feel free to remove the articles routes and add your own resources
-- ESLint is run as part of the build command 
+- ESLint is run as part of the build command
 - This project could be deployed to Google Cloud using [gcloud CLI](https://cloud.google.com/sdk/docs/install) without any modifications
 ```
 gcloud run deploy
